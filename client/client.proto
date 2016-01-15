@@ -1,0 +1,20 @@
+syntax = "proto3";
+package client;
+
+import "wire/wire.proto";
+
+message Channel {
+  bytes channelID = 1;
+
+  wire.OpeningTx openingTx = 2;
+
+  uint32 me = 8;
+
+  enum State {
+    PendingOpen = 0;
+    Open = 1;
+    PendingClosed = 2;
+    Closed = 3;
+  }
+  State state = 9;
+}

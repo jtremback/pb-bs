@@ -1,0 +1,1 @@
+protoc ./wire/wire.proto --go_out ./ && protoc ./client/client.proto --go_out ./ -I ./

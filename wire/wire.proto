@@ -1,0 +1,11 @@
+syntax = "proto3";
+package wire;
+
+message OpeningTx {
+  bytes channelID = 1;
+  bytes pubkey1 = 2;
+  bytes pubkey2 = 3;
+  uint32 amount1 = 4;
+  uint32 amount2 = 5;
+  uint32 holdPeriod = 6;
+}
