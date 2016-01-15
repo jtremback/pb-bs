@@ -1,7 +1,7 @@
 syntax = "proto3";
 package client;
 
-import "wire/wire.proto";
+import "github.com/jtremback/pb-bs/wire/wire.proto";
 
 message Channel {
   bytes channelID = 1;

@@ -6,7 +6,7 @@ import (
 
 func Foo() {
 	fmt.Println("hello", Channel{
-		ChannelID: []byte{0},
+		ChannelID: []byte{4, 20},
 	})
 	// fmt.Println("foo")
 }
